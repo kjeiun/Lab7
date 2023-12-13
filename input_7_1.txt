@@ -1,0 +1,21 @@
+def a(n): # Finonacci
+
+    if n == 0: return 0 # end
+    elif n == 1: return 1 # end
+    else: return a(n-1)+a(n-2)
+print(a(9))
+def b(a,a2): # greatest common divisor
+    if(a2==0):
+        return a
+    else:
+        return b(a2,a%a2)
+
+print(b(15,25))
+def define123():
+    '''
+    Meaningless code
+    '''
+    print(a(7))
+    a_ = a(8)+b(6, 15)
+    print(a_)
+define123()
